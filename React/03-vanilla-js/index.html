@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="react-app"></div>
+    <dib id="vanilaJS-app"></dib>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+      const reactHeading = React.createElement("h1", null, "Hello From React")
+      console.log(reactHeading)
+      const container = document.getElementById("react-app")
+      const root = ReactDOM.createRoot(container)
+      root.render(reactHeading)
+    </script>
+    <script>
+      const vanillaJSHeading = document.createElement("h1")
+      vanillaJSHeading.textContent = "Hello From VanilaJS"
+      console.log(vanillaJSHeading)
+      document.getElementById("vanilaJS-app").appendChild(vanillaJSHeading)
+    </script>
+  </body>
+</html>

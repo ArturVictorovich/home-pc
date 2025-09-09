@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+:root {
+  --color-red-button: #db4444;
+}
+@theme {
+  --color-red-button: var(--color-red-button);
+}
